@@ -1,0 +1,12 @@
+{
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#00bfff",
+		"statusBar.foreground": "#15202b",
+		"statusBarItem.hoverBackground": "#0099cc",
+		"statusBarItem.remoteBackground": "#00bfff",
+		"statusBarItem.remoteForeground": "#15202b"
+	},
+	"peacock.color": "DeepSkyBlue",
+	"liveServer.settings.port": 5501,
+	"CodeGPT.apiKey": "Anthropic"
+}
