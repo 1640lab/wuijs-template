@@ -1,0 +1,43 @@
+/*
+ * WUITemplateDarkmode - v0.1
+ * Author: Sergio E. Belmar (sbelmar@1640lab.com)
+ * Distributed by: 1640 Lab S.p.A. (https://1640lab.com)
+ * Copyright (c) Sergio E. Belmar (sbelmar@1640lab.com)
+ */
+
+ :root {
+	--wui-template-graycolor1: #fff;
+	--wui-template-graycolor2: #ccc;
+	--wui-template-graycolor3: #888;
+	--wui-template-graycolor4: #444;
+	--wui-template-graycolor5: #000;
+
+	--wui-template-lightcolor1: #f6f6fa;
+	--wui-template-lightcolor2: #fdfdfe;
+
+	--wui-template-darkcolor1: #1f2429;
+	--wui-template-darkcolor2: #353a40;
+	--wui-template-darkcolor3: #2f3c48;
+	--wui-template-darkcolor4: #3b404a;
+	--wui-template-darkcolor5: #3c4d5a;
+
+	--wui-template-intensity-low: mediumaquamarine;
+	--wui-template-intensity-half: darkorange;
+	--wui-template-intensity-high: orangered;
+
+	--wui-template-primarycolor: #f4a261;
+	--wui-template-hightlightcolor: #1e90ff;
+	--wui-template-warningcolor: #f44343;
+	--wui-template-disabledcolor: #d5dce3;
+	--wui-template-overlaycolor: #010203;
+	--wui-template-softcolor: #353a401a;
+
+	--wui-template-borderradius1: 10px;
+	--wui-template-borderradius2: 15px;
+	--wui-template-borderradius3: 17px;
+	--wui-template-borderradius4: 50%;
+
+	--wui-template-titlefont: "SanFrancisco";
+ }
+ .wui-template-darkmode {
+ }
