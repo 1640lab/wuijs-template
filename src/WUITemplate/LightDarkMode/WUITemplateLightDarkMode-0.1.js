@@ -14,7 +14,10 @@ class WUITemplateLightDarkMode {
 	}
 
 	setScheme(value) {
-		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light)$/i)) {
+		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light|auto)$/i)) {
+			if (value.match(/auto/i)) {
+				value = "light dark";
+			}
 			document.documentElement.style.colorScheme = value.toLowerCase();
 		}
 	}
