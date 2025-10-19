@@ -6,6 +6,7 @@
  */
 
  :root {
+
 	color-scheme: light;
 
 	--wui-template-maincolor-hightlight: #1e90ff;
@@ -46,12 +47,10 @@
 	--wui-template-borderradius-round: 50%;
 
 	--wui-template-titlefont: "Arial, Helvetica, Verdana, sans-serif";
-}
-.wui-template-lightdarkmode {
-
-	/* wui-template-lightdarkmode */
 
 	--wui-template-lightdarkmode-transition-delay: .4s;
+}
+.wui-template-lightdarkmode {
 
 	/* wui-loader */
 
@@ -89,7 +88,7 @@
 	--wui-modal-body-scroll-bgcolor-over: rgb(from var(--wui-template-bgcolor-scroll) r g b / 40%);
 	--wui-modal-footer-bordercolor: transparent;
 	--wui-modal-message-box-width: 280px;
-	--wui-modal-message-box-bgcolor: rgb(from var(--wui-template-graycolor-box) r g b / 80%);
+	--wui-modal-message-box-bgcolor: rgb(from var(--wui-template-bgcolor-box) r g b / 80%);
 	--wui-modal-message-box-textcolor: var(--wui-template-textcolor-active);
 	--wui-modal-message-mobile-box-width: 280px;
 	--wui-modal-message-mobile-footer-bordercolor: var(--wui-template-bordercolor-low);
@@ -413,7 +412,7 @@
 	--wui-colorpicker-viewicon-borderwidth: 1px;
 	--wui-colorpicker-viewicon-bordercolor: rgb(from var(--wui-template-maincolor-hightlight) r g b / 20%);
 	--wui-colorpicker-openicon-src: none;
-	--wui-colorpicker-openicon-size: var(--wui-form-select-pickericon-size);
+	--wui-colorpicker-openicon-size: var(--wui-form-select-openicon-size);
 	--wui-colorpicker-opencolor-out: var(--wui-form-select-opencolor-out);
 	--wui-colorpicker-opencolor-over: var(--wui-form-select-opencolor-over);
 	--wui-colorpicker-opencolor-focus: var(--wui-form-select-opencolor-focus);
