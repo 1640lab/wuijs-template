@@ -46,8 +46,8 @@
 	--wui-modal-message-box-bgcolor: rgb(from #efeff6 r g b / 80%);
 	--wui-modal-message-box-textcolor: #2d3a47;
 	--wui-modal-message-mobile-box-width: 280px;
-	--wui-modal-message-mobile-footer-bordercolor: #f0f0f3;
-	--wui-modal-message-mobile-button-bordercolor: #f0f0f3;
+	--wui-modal-message-mobile-footer-bordercolor: #d5dce3;
+	--wui-modal-message-mobile-button-bordercolor: #d5dce3;
 	--wui-modal-message-linkcolor: #1e90ff;
 	--wui-modal-page-box-width: 800px;
 	--wui-modal-page-box-height: 90%;
