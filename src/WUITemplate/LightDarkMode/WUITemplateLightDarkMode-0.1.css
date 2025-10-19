@@ -496,6 +496,7 @@
 	--wui-button-submit-bordercolor-disabled: var(--wui-button-default-bordercolor-disabled);
 	--wui-button-submit-bgcolor-out: var(--wui-template-maincolor-hightlight);
 	--wui-button-submit-bgcolor-over: var(--wui-template-maincolor-hightlight);
+	--wui-button-submit-bgcolor-mobile: rgb(from var(--wui-template-shadowcolor-high) r g b / 20%);
 	--wui-button-submit-bgcolor-selected: var(--wui-template-maincolor-hightlight);
 	--wui-button-submit-bgcolor-disabled: var(--wui-template-maincolor-disabled);
 	--wui-button-submit-textcolor-out: var(--wui-template-graycolor-max);
