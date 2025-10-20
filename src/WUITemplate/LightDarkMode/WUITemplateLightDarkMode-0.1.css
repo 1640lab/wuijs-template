@@ -5,17 +5,29 @@
  * Copyright (c) Sergio E. Belmar (sbelmar@1640lab.com)
  */
 
- :root {
+:root {
 
-	color-scheme: light;
+	--wui-template-lightdarkmode-transition-delay: .4s;
 
 	--wui-template-maincolor-hightlight: #1e90ff;
 	--wui-template-maincolor-warning: #f44343;
-	--wui-template-maincolor-disabled: light-dark(#d5dce3, #4b5563);
-	
+
 	--wui-template-intencitycolor-low: mediumaquamarine;
 	--wui-template-intencitycolor-half: darkorange;
 	--wui-template-intencitycolor-high: orangered;
+
+	--wui-template-borderradius-low: 10px;
+	--wui-template-borderradius-half: 15px;
+	--wui-template-borderradius-high: 17px;
+	--wui-template-borderradius-round: 50%;
+
+	--wui-template-titlefont: "Arial, Helvetica, Verdana, sans-serif";
+}
+:root[data-scheme="light dark"] {
+
+	color-scheme: light dark;
+
+	--wui-template-maincolor-disabled: light-dark(#d5dce3, #4b5563);
 
 	--wui-template-graycolor-max: light-dark(#fff, #000);
 	--wui-template-graycolor-high: light-dark(#ccc, #444);
@@ -40,15 +52,66 @@
 	--wui-template-textcolor-title: light-dark(#000, #fff);
 	--wui-template-textcolor-active: light-dark(#2d3a47, #f3f4f6);
 	--wui-template-textcolor-focus: light-dark(#1f2937, #fff);
+}
+:root[data-scheme="light"] {
 
-	--wui-template-borderradius-low: 10px;
-	--wui-template-borderradius-half: 15px;
-	--wui-template-borderradius-high: 17px;
-	--wui-template-borderradius-round: 50%;
+	color-scheme: light;
 
-	--wui-template-titlefont: "Arial, Helvetica, Verdana, sans-serif";
+	--wui-template-maincolor-disabled: #d5dce3;
 
-	--wui-template-lightdarkmode-transition-delay: .4s;
+	--wui-template-graycolor-max: #fff;
+	--wui-template-graycolor-high: #ccc;
+	--wui-template-graycolor-half: #888;
+	--wui-template-graycolor-low: #444;
+	--wui-template-graycolor-min: #000;
+
+	--wui-template-shadowcolor-low: #304d63;
+	--wui-template-shadowcolor-high: #959da5;
+
+	--wui-template-bordercolor-low: #f0f0f3;
+	--wui-template-bordercolor-high: #d5dce3;
+	
+	--wui-template-bgcolor-overlay: #010203;
+	--wui-template-bgcolor-box: #efeff6;
+	--wui-template-bgcolor-out: #fdfdfe;
+	--wui-template-bgcolor-over: #f6f6fa;
+	--wui-template-bgcolor-scroll: #353a40;
+	--wui-template-bgcolor-icon: #353a40;
+	--wui-template-bgcolor-highcontrast: #1f2429;
+
+	--wui-template-textcolor-title: #000;
+	--wui-template-textcolor-active: #2d3a47;
+	--wui-template-textcolor-focus: #1f2937;
+}
+:root[data-scheme="dark"] {
+
+	color-scheme: dark;
+
+	--wui-template-maincolor-disabled: #4b5563;
+
+	--wui-template-graycolor-max: #000;
+	--wui-template-graycolor-high: #444;
+	--wui-template-graycolor-half: #888;
+	--wui-template-graycolor-low: #ccc;
+	--wui-template-graycolor-min: #fff;
+
+	--wui-template-shadowcolor-low: #2f3a48;
+	--wui-template-shadowcolor-high: #1f2937;
+
+	--wui-template-bordercolor-low: #374151;
+	--wui-template-bordercolor-high: #4b5563;
+	
+	--wui-template-bgcolor-overlay: #000;
+	--wui-template-bgcolor-box: #2f3a48;
+	--wui-template-bgcolor-out: #1f2937;
+	--wui-template-bgcolor-over: #374151;
+	--wui-template-bgcolor-scroll: #4b5563;
+	--wui-template-bgcolor-icon: #d1d5db;
+	--wui-template-bgcolor-highcontrast: #f9fafb;
+
+	--wui-template-textcolor-title: #fff;
+	--wui-template-textcolor-active: #f3f4f6;
+	--wui-template-textcolor-focus: #fff;
 }
 .wui-template-lightdarkmode {
 
@@ -524,45 +587,16 @@
 	--wui-button-mobile-icon-float-padding: 10px;
 	--wui-button-form-default-minwidth: 100px;
 }
-.wui-template-lightdarkmode.transition .wui-icon,
-.wui-template-lightdarkmode.transition .wui-modal,
-.wui-template-lightdarkmode.transition .wui-modal > .box,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .header,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .header > .topbar::before,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .header > .back,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .header > .back > .icon,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .header > .title,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .body > .text,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .footer,
-.wui-template-lightdarkmode.transition .wui-modal > .box > .footer > :is(button, a),
-.wui-template-lightdarkmode.transition .wui-list > .row,
-.wui-template-lightdarkmode.transition .wui-list > .row > .strip,
-.wui-template-lightdarkmode.transition .wui-list > .row > .strip > .cell,
-.wui-template-lightdarkmode.transition .wui-list > .row.slider > .buttons,
-.wui-template-lightdarkmode.transition .wui-list > .row.slider > .buttons > .button,
-.wui-template-lightdarkmode.transition .wui-list > .inner-row,
-.wui-template-lightdarkmode.transition .wui-table,
-.wui-template-lightdarkmode.transition .wui-table > table > :is(thead, tbody) > tr > :is(th, td),
-.wui-template-lightdarkmode.transition .wui-form > :is(.header, .body),
-.wui-template-lightdarkmode.transition .wui-form > .body::-webkit-scrollbar-thumb,
-.wui-template-lightdarkmode.transition .wui-form :is(legend, hr, .link),
-.wui-template-lightdarkmode.transition .wui-form .link > .icon,
-.wui-template-lightdarkmode.transition .wui-form fieldset > :is(.field, .text, .message),
-.wui-template-lightdarkmode.transition .wui-form fieldset > :is(.field, .tex, .message) a,
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > :is(label, input, select, textarea, progress[value]),
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > input[type="range"]::-ms-thumb,
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > input[type="range"]::-webkit-slider-thumb,
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > input[type="range"]::-moz-range-thumb,
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > input[type="range"]::-ms-thumb,
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > input[type="checkbox"]::before,
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > progress[value]::-webkit-progress-bar,
-.wui-template-lightdarkmode.transition .wui-form fieldset > .field > progress[value]::-moz-progress-bar,
-.wui-template-lightdarkmode.transition .wui-button {
-	--transition: -webkit-box-shadow, -moz-box-shadow, box-shadow, border-color, background-color, color;
-	-webkit-transition: var(--transition);
-	-webkit-transition-delay: var(--wui-template-lightdarkmode-transition-delay);
-	-moz-transition: var(--transition);
-	-moz-transition-delay: var(--wui-template-lightdarkmode-transition-delay);
-	transition: var(--transition);
-	transition-delay: var(--wui-template-lightdarkmode-transition-delay);
+.wui-template-lightdarkmode {
+    -webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.wui-template-lightdarkmode.transition,
+.wui-template-lightdarkmode.transition * {
+	--delay: var(--wui-template-lightdarkmode-transition-delay);
+	--transition: background-color var(--delay) ease;
+	-webkit-transition: var(--transition) !important;
+	-moz-transition: var(--transition) !important;
+	transition: var(--transition) !important;
 }
