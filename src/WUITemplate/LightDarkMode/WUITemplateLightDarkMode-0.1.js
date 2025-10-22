@@ -14,8 +14,8 @@ class WUITemplateLightDarkMode {
 	}
 
 	setScheme(value) {
-		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light|auto)$/i)) {
-			value = value.match(/auto/i) ? "light dark" : value.toLowerCase();
+		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light|system)$/i)) {
+			value = value.match(/system/i) ? "light dark" : value.toLowerCase();
 			if (this._colorScheme != value) {
 				let delay = getComputedStyle(document.documentElement).getPropertyValue("--wui-template-lightdarkmode-transition-delay").trim() || "0";
 				delay = (delay.match(/\d+s$/) ? 1000 : 1) * parseFloat(delay.replace(/m?s$/, ""));
