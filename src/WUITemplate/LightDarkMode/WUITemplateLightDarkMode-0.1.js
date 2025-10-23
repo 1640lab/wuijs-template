@@ -13,6 +13,10 @@ class WUITemplateLightDarkMode {
 		return getComputedStyle(document.documentElement).getPropertyValue("color-scheme").trim();
 	}
 
+	getCurrentScheme() {
+		return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+	}
+
 	setScheme(value) {
 		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light|system)$/i)) {
 			value = value.match(/system/i) ? "light dark" : value.toLowerCase();

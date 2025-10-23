@@ -20,15 +20,17 @@
 	--wui-template-graycolor-min-light: #000;
 	--wui-template-graycolor-min-dark: #fff;
 
-	--wui-template-shadowcolor-low-light: #304d63;
-	--wui-template-shadowcolor-low-dark: #2f3a48;
-	--wui-template-shadowcolor-high-light: #959da5;
-	--wui-template-shadowcolor-high-dark: #1f2937;
+	--wui-template-shadowcolor-high-light: #304d63;
+	--wui-template-shadowcolor-high-dark: #2f3a48;
+	--wui-template-shadowcolor-low-light: #959da5;
+	--wui-template-shadowcolor-low-dark: #1f2937;
 
-	--wui-template-bordercolor-low-light: #f0f0f3;
-	--wui-template-bordercolor-low-dark: #374151;
+	--wui-template-bordercolor-max-light: #b5bbc1;
+	--wui-template-bordercolor-max-dark: #4b5563;
 	--wui-template-bordercolor-high-light: #d5dce3;
 	--wui-template-bordercolor-high-dark: #4b5563;
+	--wui-template-bordercolor-low-light: #f0f0f3;
+	--wui-template-bordercolor-low-dark: #374151;
 
 	--wui-template-bgcolor-overlay-light: #010203;
 	--wui-template-bgcolor-overlay-dark: #000;
@@ -83,8 +85,9 @@
 	--wui-template-graycolor-min: light-dark(var(--wui-template-graycolor-min-light), var(--wui-template-graycolor-min-dark));
 	--wui-template-shadowcolor-low: light-dark(var(--wui-template-shadowcolor-low-light), var(--wui-template-shadowcolor-low-dark));
 	--wui-template-shadowcolor-high: light-dark(var(--wui-template-shadowcolor-high-light), var(--wui-template-shadowcolor-high-dark));
-	--wui-template-bordercolor-low: light-dark(var(--wui-template-bordercolor-low-light), var(--wui-template-bordercolor-low-dark));
+	--wui-template-bordercolor-max: light-dark(var(--wui-template-bordercolor-max-light), var(--wui-template-bordercolor-max-dark));
 	--wui-template-bordercolor-high: light-dark(var(--wui-template-bordercolor-high-light), var(--wui-template-bordercolor-high-dark));
+	--wui-template-bordercolor-low: light-dark(var(--wui-template-bordercolor-low-light), var(--wui-template-bordercolor-low-dark));
 	--wui-template-bgcolor-overlay: light-dark(var(--wui-template-bgcolor-overlay-light), var(--wui-template-bgcolor-overlay-dark));
 	--wui-template-bgcolor-box: light-dark(var(--wui-template-bgcolor-box-light), var(--wui-template-bgcolor-box-dark));
 	--wui-template-bgcolor-out: light-dark(var(--wui-template-bgcolor-out-light), var(--wui-template-bgcolor-out-dark));
@@ -112,8 +115,9 @@
 	--wui-template-graycolor-min: var(--wui-template-graycolor-min-light);
 	--wui-template-shadowcolor-low: var(--wui-template-shadowcolor-low-light);
 	--wui-template-shadowcolor-high: var(--wui-template-shadowcolor-high-light);
-	--wui-template-bordercolor-low: var(--wui-template-bordercolor-low-light);
+	--wui-template-bordercolor-max: var(--wui-template-bordercolor-max-light);
 	--wui-template-bordercolor-high: var(--wui-template-bordercolor-high-light);
+	--wui-template-bordercolor-low: var(--wui-template-bordercolor-low-light);
 	--wui-template-bgcolor-overlay: var(--wui-template-bgcolor-overlay-light);
 	--wui-template-bgcolor-box: var(--wui-template-bgcolor-box-light);
 	--wui-template-bgcolor-out: var(--wui-template-bgcolor-out-light);
@@ -141,8 +145,9 @@
 	--wui-template-graycolor-min: var(--wui-template-graycolor-min-dark);
 	--wui-template-shadowcolor-low: var(--wui-template-shadowcolor-low-dark);
 	--wui-template-shadowcolor-high: var(--wui-template-shadowcolor-high-dark);
-	--wui-template-bordercolor-low: var(--wui-template-bordercolor-low-dark);
+	--wui-template-bordercolor-max: var(--wui-template-bordercolor-max-dark);
 	--wui-template-bordercolor-high: var(--wui-template-bordercolor-high-dark);
+	--wui-template-bordercolor-low: var(--wui-template-bordercolor-low-dark);
 	--wui-template-bgcolor-highcontrast: var(--wui-template-bgcolor-highcontrast-dark);
 	--wui-template-bgcolor-overlay: var(--wui-template-bgcolor-overlay-dark);
 	--wui-template-bgcolor-box: var(--wui-template-bgcolor-box-dark);
@@ -202,7 +207,7 @@
 	--wui-modal-message-box-bgcolor: rgb(from var(--wui-template-bgcolor-box) r g b / 80%);
 	--wui-modal-message-box-textcolor: var(--wui-template-textcolor-active);
 	--wui-modal-message-mobile-box-width: 280px;
-	--wui-modal-message-mobile-footer-bordercolor: var(--wui-template-bordercolor-high);
+	--wui-modal-message-mobile-footer-bordercolor: var(--wui-template-bordercolor-max);
 	--wui-modal-message-mobile-button-bordercolor: var(--wui-template-bordercolor-high);
 	--wui-modal-message-linkcolor: var(--wui-template-utilitycolor-hightlight);
 	--wui-modal-page-box-width: 800px;
@@ -262,7 +267,7 @@
 
 	/* wui-list */
 
-	--wui-list-shadowcolor: var(--wui-template-shadowcolor-high);
+	--wui-list-shadowcolor: var(--wui-template-shadowcolor-low);
 	--wui-list-borderradius: var(--wui-template-borderradius-low);
 	--wui-list-borderwidth: 0;
 	--wui-list-bordercolor: var(--wui-template-bordercolor-low);
@@ -290,7 +295,7 @@
 
 	/* wui-table */
 
-	--wui-table-shadowcolor: var(--wui-template-shadowcolor-high);
+	--wui-table-shadowcolor: var(--wui-template-shadowcolor-low);
 	--wui-table-borderradius: var(--wui-template-borderradius-low);
 	--wui-table-column-bordercolor-width: 1px;
 	--wui-table-column-bordercolor-out: rgb(from var(--wui-template-utilitycolor-hightlight) r g b / 10%);
@@ -394,7 +399,7 @@
 	--wui-form-text-textcolor-disabled: var(--wui-template-utilitycolor-disabled);
 	--wui-form-text-linkcolor-out: var(--wui-template-utilitycolor-hightlight);
 	--wui-form-text-linkcolor-highlight: var(--wui-template-utilitycolor-hightlight);
-	--wui-form-message-shadowcolor: var(--wui-template-shadowcolor-high);
+	--wui-form-message-shadowcolor: var(--wui-template-shadowcolor-low);
 	--wui-form-message-bgcolor: var(--wui-template-bgcolor-out);
 	--wui-form-message-textcolor: var(--wui-template-textcolor-active);
 	--wui-form-message-highlight-bgcolor: var(--wui-template-utilitycolor-hightlight);
@@ -417,7 +422,7 @@
 	--wui-selectpicker-input-textcolor-out: var(--wui-form-input-textcolor-out);
 	--wui-selectpicker-input-textcolor-over: var(--wui-form-input-textcolor-over);
 	--wui-selectpicker-input-textcolor-disabled: var(--wui-form-input-textcolor-disabled);
-	--wui-selectpicker-box-shadowcolor: var(--wui-template-shadowcolor-high);
+	--wui-selectpicker-box-shadowcolor: var(--wui-template-shadowcolor-low);
 	--wui-selectpicker-box-borderradius: var(--wui-template-borderradius-half);
 	--wui-selectpicker-box-bordercolor: var(--wui-template-bordercolor-low);
 	--wui-selectpicker-box-bgcolor: var(--wui-template-bgcolor-out);
@@ -451,7 +456,7 @@
 	--wui-datepicker-opencolor-over: var(--wui-form-select-opencolor-over);
 	--wui-datepicker-opencolor-focus: var(--wui-form-select-opencolor-focus);
 	--wui-datepicker-opencolor-disabled: var(--wui-form-select-opencolor-disabled);
-	--wui-datepicker-box-shadowcolor: var(--wui-template-shadowcolor-high);
+	--wui-datepicker-box-shadowcolor: var(--wui-template-shadowcolor-low);
 	--wui-datepicker-box-borderradius: var(--wui-template-borderradius-half);
 	--wui-datepicker-box-bordercolor: var(--wui-template-bordercolor-low);
 	--wui-datepicker-box-bgcolor: rgb(from var(--wui-template-bgcolor-out) r g b / 100%);
@@ -496,7 +501,7 @@
 	--wui-timepicker-opencolor-over: var(--wui-form-select-opencolor-over);
 	--wui-timepicker-opencolor-focus: var(--wui-form-select-opencolor-focus);
 	--wui-timepicker-opencolor-disabled: var(--wui-form-select-opencolor-disabled);
-	--wui-timepicker-box-shadowcolor: var(--wui-template-shadowcolor-high);
+	--wui-timepicker-box-shadowcolor: var(--wui-template-shadowcolor-low);
 	--wui-timepicker-box-borderradius: var(--wui-template-borderradius-half);
 	--wui-timepicker-box-bordercolor: var(--wui-template-bordercolor-low);
 	--wui-timepicker-box-bgcolor: rgb(from var(--wui-template-graycolor-max) r g b / 80%);
@@ -530,7 +535,7 @@
 	--wui-colorpicker-opencolor-disabled: var(--wui-form-select-opencolor-disabled);
 	--wui-colorpicker-emptyicon-src: none;
 	--wui-colorpicker-emptycolor-out: var(--wui-template-bgcolor-over);
-	--wui-colorpicker-box-shadowcolor: var(--wui-template-shadowcolor-high);
+	--wui-colorpicker-box-shadowcolor: var(--wui-template-shadowcolor-low);
 	--wui-colorpicker-box-borderradius: var(--wui-template-borderradius-half);
 	--wui-colorpicker-box-bordercolor: var(--wui-template-bordercolor-low);
 	--wui-colorpicker-box-bgcolor: rgb(from var(--wui-template-graycolor-max) r g b / 80%);
@@ -607,7 +612,7 @@
 	--wui-button-submit-bordercolor-disabled: var(--wui-button-default-bordercolor-disabled);
 	--wui-button-submit-bgcolor-out: var(--wui-template-utilitycolor-hightlight);
 	--wui-button-submit-bgcolor-over: var(--wui-template-utilitycolor-hightlight);
-	--wui-button-submit-bgcolor-mobile: rgb(from var(--wui-template-shadowcolor-high) r g b / 20%);
+	--wui-button-submit-bgcolor-mobile: rgb(from var(--wui-template-shadowcolor-low) r g b / 20%);
 	--wui-button-submit-bgcolor-selected: var(--wui-template-utilitycolor-hightlight);
 	--wui-button-submit-bgcolor-disabled: var(--wui-template-utilitycolor-disabled);
 	--wui-button-submit-textcolor-out: var(--wui-template-graycolor-max);
