@@ -142,7 +142,7 @@
 	--wui-table-column-bordercolor-selected: #1e90ff;
 	--wui-table-column-bgcolor-out: #f6f6fa;
 	--wui-table-column-bgcolor-over: #f6f6fa;
-	--wui-table-column-bgcolor-selectd: #1e90ff;
+	--wui-table-column-bgcolor-selected: #1e90ff;
 	--wui-table-column-textcolor-out: #444;
 	--wui-table-column-textcolor-over: #000;
 	--wui-table-column-textcolor-selected: #1e90ff;
@@ -163,9 +163,11 @@
 	--wui-table-row-bordercolor-out: #f0f0f3;
 	--wui-table-row-bordercolor-over: #f0f0f3;
 	--wui-table-row-bordercolor-selected: #1e90ff;
+	--wui-table-row-bordercolor-disabled: #f0f0f3;
 	--wui-table-row-bgcolor-out: #fdfdfe;
 	--wui-table-row-bgcolor-over: #f6f6fa;
-	--wui-table-row-bgcolor-selectd: #1e90ff;
+	--wui-table-row-bgcolor-selected: #1e90ff;
+	--wui-table-row-bgcolor-disabled: transparent;
 	--wui-table-row-textcolor-out: #2d3a47;
 	--wui-table-row-textcolor-over: #1f2937;
 	--wui-table-row-textcolor-disabled: #d5dce3;

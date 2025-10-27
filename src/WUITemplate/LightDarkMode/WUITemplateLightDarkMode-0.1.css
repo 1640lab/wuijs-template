@@ -302,7 +302,7 @@
 	--wui-table-column-bordercolor-selected: var(--wui-template-utilitycolor-hightlight);
 	--wui-table-column-bgcolor-out: var(--wui-template-bgcolor-over);
 	--wui-table-column-bgcolor-over: var(--wui-template-bgcolor-over);
-	--wui-table-column-bgcolor-selectd: var(--wui-template-utilitycolor-hightlight);
+	--wui-table-column-bgcolor-selected: var(--wui-template-utilitycolor-hightlight);
 	--wui-table-column-textcolor-out: var(--wui-template-graycolor-low);
 	--wui-table-column-textcolor-over: var(--wui-template-graycolor-min);
 	--wui-table-column-textcolor-selected: var(--wui-template-utilitycolor-hightlight);
@@ -323,9 +323,11 @@
 	--wui-table-row-bordercolor-out: var(--wui-template-bordercolor-low);
 	--wui-table-row-bordercolor-over: var(--wui-template-bordercolor-low);
 	--wui-table-row-bordercolor-selected: var(--wui-template-utilitycolor-hightlight);
+	--wui-table-row-bordercolor-disabled: var(--wui-template-bordercolor-low);
 	--wui-table-row-bgcolor-out: var(--wui-template-bgcolor-out);
 	--wui-table-row-bgcolor-over: var(--wui-template-bgcolor-over);
-	--wui-table-row-bgcolor-selectd: var(--wui-template-utilitycolor-hightlight);
+	--wui-table-row-bgcolor-selected: var(--wui-template-utilitycolor-hightlight);
+	--wui-table-row-bgcolor-disabled: transparent;
 	--wui-table-row-textcolor-out: var(--wui-template-textcolor-active);
 	--wui-table-row-textcolor-over: var(--wui-template-textcolor-focus);
 	--wui-table-row-textcolor-disabled: var(--wui-template-utilitycolor-disabled);
