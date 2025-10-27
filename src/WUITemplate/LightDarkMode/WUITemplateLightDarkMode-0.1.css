@@ -330,7 +330,7 @@
 	--wui-table-row-bgcolor-disabled: transparent;
 	--wui-table-row-textcolor-out: var(--wui-template-textcolor-active);
 	--wui-table-row-textcolor-over: var(--wui-template-textcolor-focus);
-	--wui-table-row-textcolor-selected: var(--wui-template-bgcolor-over)
+	--wui-table-row-textcolor-selected: var(--wui-template-bgcolor-over);
 	--wui-table-row-textcolor-disabled: var(--wui-template-utilitycolor-disabled);
 
 	/* wui-form */
