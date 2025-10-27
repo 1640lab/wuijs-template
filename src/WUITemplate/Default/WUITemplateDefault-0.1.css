@@ -170,8 +170,8 @@
 	--wui-table-row-bgcolor-disabled: transparent;
 	--wui-table-row-textcolor-out: #2d3a47;
 	--wui-table-row-textcolor-over: #1f2937;
+	--wui-table-row-textcolor-selected: #f6f6fa;
 	--wui-table-row-textcolor-disabled: #d5dce3;
-	--wui-table-row-textcolor-selected: #1e90ff;
 
 	/* wui-form */
 
