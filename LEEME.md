@@ -1,7 +1,7 @@
 > [!WARNING]
 > Este documento aún no ha sido terminado y esta en una versión preliminar.
 
-# wuijs-template
+# wuijs-templates
 
 Versión librería: `0.1.0` ([Change Log](./REGISTRODECAMBIO.md))
 

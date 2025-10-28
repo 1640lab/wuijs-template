@@ -1,7 +1,7 @@
 > [!WARNING]
 > This document has not yet been finalized and is in a preliminary version.
 
-# wuijs-template
+# wuijs-templates
 
 Library version: `0.1.0` ([Change Log](./CHANGELOG.md))
 
