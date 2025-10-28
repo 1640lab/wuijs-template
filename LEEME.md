@@ -1,8 +1,11 @@
+> [!WARNING]
+> Este documento aún no ha sido terminado y esta en una versión preliminar.
+
 # wuijs-template
 
 Versión librería: `0.1.0` ([Change Log](./REGISTRODECAMBIO.md))
 
-Versión documentación: `0.1.0.20251015.1-e` (e: in edition, c: complete)
+Versión documentación: `0.1.0.20251027.1`
 
 Licencia: `Apache License 2.0`
 
