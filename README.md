@@ -10,4 +10,4 @@ Author: `Sergio E. Belmar V. <sbelmar@wuijs.dev>`
 
 ## Overview
 
-WUIJS Templates Lib, is an open source JavaScript library that provides a collection of web user interface templates built using the WUIJS Lib classes, facilitating rapid development of web applications.	
+WUIJS Templates Lib, is an open source JavaScript/CSS library that provides a collection of web user interface templates built using the WUIJS Lib classes, facilitating rapid development of web applications.	
