@@ -205,7 +205,7 @@
 	--wui-modal-message-box-bgcolor: rgb(from var(--wui-template-bgcolor-box) r g b / 80%);
 	--wui-modal-message-box-textcolor: var(--wui-template-textcolor-active);
 	--wui-modal-message-mobile-box-width: 280px;
-	--wui-modal-message-mobile-footer-bordercolor: var(--wui-template-bordercolor-max);
+	--wui-modal-message-mobile-footer-bordercolor: var(--wui-template-bordercolor-high);
 	--wui-modal-message-mobile-button-bordercolor: var(--wui-template-bordercolor-high);
 	--wui-modal-message-linkcolor: var(--wui-template-utilitycolor-hightlight);
 	--wui-modal-page-box-width: 800px;
