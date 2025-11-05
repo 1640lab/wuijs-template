@@ -189,8 +189,7 @@
 
 	/* wui-modal */
 
-	--wui-modal-overlay-bgcolor: rgba(1, 2, 3, .2); /* RGBA format required */
-	--wui-modal-overlay-bgcolor-under: rgb(from var(--wui-template-bgcolor-overlay) r g b / 0%);
+	--wui-modal-overlay-bgcolor: rgb(from var(--wui-template-bgcolor-overlay) r g b / 20%);
 	--wui-modal-box-borderradius: var(--wui-template-borderradius-high);
 	--wui-modal-box-bgcolor: rgb(from var(--wui-template-bgcolor-box) r g b / 100%);
 	--wui-modal-back-textcolor: var(--wui-template-utilitycolor-hightlight);
