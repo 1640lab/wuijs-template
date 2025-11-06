@@ -1,10 +1,10 @@
 /*
- * WUITemplateLightDarkMode - v0.1
+ * WUIPLightDarkMode - v0.1
  * Author: Sergio E. Belmar (sbelmar@wuijs.dev)
  * Copyright (c) Sergio E. Belmar (sbelmar@wuijs.dev)
  */
 
-class WUITemplateLightDarkMode {
+class WUIPLightDarkMode {
 
 	static version = "0.1";
 
@@ -20,16 +20,16 @@ class WUITemplateLightDarkMode {
 		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light|system)$/i)) {
 			value = value.match(/system/i) ? "light dark" : value.toLowerCase();
 			if (this._colorScheme != value) {
-				let delay = getComputedStyle(document.documentElement).getPropertyValue("--wui-template-lightdarkmode-transition-delay").trim() || "0";
+				let delay = getComputedStyle(document.documentElement).getPropertyValue("--wuip-lighdarkmode-lightdarkmode-transition-delay").trim() || "0";
 				delay = (delay.match(/\d+s$/) ? 1000 : 1) * parseFloat(delay.replace(/m?s$/, ""));
-				document.documentElement.querySelectorAll(".wui-template-lightdarkmode").forEach(element => {
+				document.documentElement.querySelectorAll(".wuip-lighdarkmode-lightdarkmode").forEach(element => {
 					element.classList.add("transition");
 				});
 				document.documentElement.style.colorScheme = value;
 				document.documentElement.dataset.scheme = value;
 				this._colorScheme = value;
 				setTimeout(() => {
-					document.documentElement.querySelectorAll(".wui-template-lightdarkmode").forEach(element => {
+					document.documentElement.querySelectorAll(".wuip-lighdarkmode-lightdarkmode").forEach(element => {
 						element.classList.remove("transition");
 					});
 				}, delay);
