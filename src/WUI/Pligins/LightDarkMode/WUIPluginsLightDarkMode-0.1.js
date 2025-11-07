@@ -20,7 +20,7 @@ class WUIPluginsLightDarkMode {
 		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light|system)$/i)) {
 			value = value.match(/system/i) ? "light dark" : value.toLowerCase();
 			if (this._colorScheme != value) {
-				let delay = getComputedStyle(document.documentElement).getPropertyValue("--wui-plugins-lightdarkmode-transition-delay").trim() || "0";
+				let delay = getComputedStyle(document.documentElement).getPropertyValue("--wui-plugins-theme-transition-delay").trim() || "0";
 				delay = (delay.match(/\d+s$/) ? 1000 : 1) * parseFloat(delay.replace(/m?s$/, ""));
 				document.documentElement.querySelectorAll(".wui-plugins-lightdarkmode").forEach(element => {
 					element.classList.add("transition");
