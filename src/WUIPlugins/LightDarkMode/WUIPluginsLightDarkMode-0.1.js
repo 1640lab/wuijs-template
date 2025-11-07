@@ -20,16 +20,16 @@ class WUIPluginsLightDarkMode {
 		if (typeof(value) == "string" && value.match(/^(light|only light|dark|only dark|light dark|dark light|system)$/i)) {
 			value = value.match(/system/i) ? "light dark" : value.toLowerCase();
 			if (this._colorScheme != value) {
-				let delay = getComputedStyle(document.documentElement).getPropertyValue("--wui-plugins-theme-transition-delay").trim() || "0";
+				let delay = getComputedStyle(document.documentElement).getPropertyValue("--wuiplugins-theme-transition-delay").trim() || "0";
 				delay = (delay.match(/\d+s$/) ? 1000 : 1) * parseFloat(delay.replace(/m?s$/, ""));
-				document.documentElement.querySelectorAll(".wui-plugins-lightdarkmode").forEach(element => {
+				document.documentElement.querySelectorAll(".wuiplugins-lightdarkmode").forEach(element => {
 					element.classList.add("transition");
 				});
 				document.documentElement.style.colorScheme = value;
 				document.documentElement.dataset.scheme = value;
 				this._colorScheme = value;
 				setTimeout(() => {
-					document.documentElement.querySelectorAll(".wui-plugins-lightdarkmode").forEach(element => {
+					document.documentElement.querySelectorAll(".wuiplugins-lightdarkmode").forEach(element => {
 						element.classList.remove("transition");
 					});
 				}, delay);
