@@ -73,6 +73,7 @@
 	--wuiplugins-theme-borderradius-high: 17px;
 	--wuiplugins-theme-borderradius-round: 50%;
 	--wuiplugins-theme-titlefont: Arial, Helvetica, Verdana, sans-serif;
+	--wuiplugins-theme-input-opener-iconsize: 30px;
 	--wuiplugins-theme-transition-delay: .4s;
 }
 
@@ -185,17 +186,18 @@
 	--wui-menubar-bar-bordercolor: var(--wuiplugins-theme-bordercolor-low);
 	--wui-menubar-bar-bgcolor-top: var(--wuiplugins-theme-bordercolor-low);
 	--wui-menubar-bar-bgcolor-bottom: var(--wuiplugins-theme-bordercolor-low);
-	--wui-menubar-bar-expander-size: 24px;
-	--wui-menubar-bar-expandicon-src: none;
-	--wui-menubar-bar-expandcolor-out: var(--wuiplugins-theme-graycolor-low);
-	--wui-menubar-bar-expandcolor-over: var(--wuiplugins-theme-graycolor-min);
-	--wui-menubar-bar-contracticon-src: none;
-	--wui-menubar-bar-contractcolor-out: var(--wuiplugins-theme-graycolor-low);
-	--wui-menubar-bar-contractcolor-over: var(--wuiplugins-theme-graycolor-min);
+	
+		--wui-menubar-barexpander-iconsize: 24px;
+		--wui-menubar-barexpander-bgcolor-out: var(--wuiplugins-theme-graycolor-low);
+		--wui-menubar-barexpander-bgcolor-over: var(--wuiplugins-theme-graycolor-min);
+		--wui-menubar-barexpander-expandicon-src: none;
+		--wui-menubar-barexpander-contracticon-src: none;
+
 	--wui-menubar-barbutton-bgcolor-out: transparent;
 	--wui-menubar-barbutton-bgcolor-over: transparent;
 	--wui-menubar-barbutton-bgcolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
 	--wui-menubar-barbutton-bgcolor-disabled: transparent;
+	--wui-menubar-barbutton-iconsize: 24px;
 	--wui-menubar-barbutton-iconcolor-out: rgb(from var(--wuiplugins-theme-bgcolor-icon) r g b / 70%);
 	--wui-menubar-barbutton-iconcolor-over: var(--wuiplugins-theme-bgcolor-icon);
 	--wui-menubar-barbutton-iconcolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
@@ -263,18 +265,18 @@
 	--wui-table-column-textcolor-over: var(--wuiplugins-theme-graycolor-min);
 	--wui-table-column-textcolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
 	--wui-table-column-textcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	--wui-table-column-sort-ascicon-src: none;
-	--wui-table-column-sort-asccolor-out: var(--wuiplugins-theme-graycolor-low);
-	--wui-table-column-sort-asccolor-over: var(--wuiplugins-theme-graycolor-min);
-	--wui-table-column-sort-asccolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	--wui-table-column-sort-descicon-src: none;
-	--wui-table-column-sort-desccolor-out: var(--wuiplugins-theme-graycolor-low);
-	--wui-table-column-sort-desccolor-over: var(--wuiplugins-theme-graycolor-min);
-	--wui-table-column-sort-desccolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	--wui-table-column-resize-bordercolor-out: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 10%);
-	--wui-table-column-resize-bordercolor-over: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 10%);
-	--wui-table-column-drag-bordercolor-over: var(--wuiplugins-theme-graycolor-low);
-	--wui-table-column-drag-bgcolor-drop: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 10%);
+
+		--wui-table-column-sorter-iconsize: 16px;
+		--wui-table-column-sorter-iconcolor-out: var(--wuiplugins-theme-graycolor-low);
+		--wui-table-column-sorter-iconcolor-over: var(--wuiplugins-theme-graycolor-min);
+		--wui-table-column-sorter-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
+		--wui-table-column-sorter-ascicon-src: none;
+		--wui-table-column-sorter-descicon-src: none;
+		--wui-table-column-resizer-bordercolor-out: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 10%);
+		--wui-table-column-resizer-bordercolor-over: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 10%);
+		--wui-table-column-dragger-bordercolor-over: var(--wuiplugins-theme-graycolor-low);
+		--wui-table-column-dragger-bgcolor-drop: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 10%);
+
 	--wui-table-row-bordercolor-width: 1px;
 	--wui-table-row-bordercolor-out: var(--wuiplugins-theme-bordercolor-low);
 	--wui-table-row-bordercolor-over: var(--wuiplugins-theme-bordercolor-low);
@@ -341,7 +343,9 @@
 	--wui-form-range-trackbar-bgcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
 	--wui-form-range-trackbar-bgcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
 	--wui-form-select-openicon-src: none;
-	--wui-form-select-openicon-size: 30px;
+	
+		--wui-form-select-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
+
 	--wui-form-select-opencolor-out: var(--wuiplugins-theme-graycolor-min);
 	--wui-form-select-opencolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
 	--wui-form-select-opencolor-focus: var(--wuiplugins-theme-utilitycolor-hightlight);
@@ -370,12 +374,13 @@
 
 	/* wui-selectpicker */
 
-	--wui-selectpicker-openicon-src: none;
-	--wui-selectpicker-openicon-size: var(--wui-form-select-openicon-size);
-	--wui-selectpicker-opencolor-out: var(--wuiplugins-theme-graycolor-min);
-	--wui-selectpicker-opencolor-over: var(--wui-form-select-opencolor-over);
-	--wui-selectpicker-opencolor-focus: var(--wui-form-select-opencolor-focus);
-	--wui-selectpicker-opencolor-disabled: var(--wui-form-select-opencolor-disabled);
+		--wui-selectpicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
+		--wui-selectpicker-opener-iconcolor-out: var(--wuiplugins-theme-graycolor-min);
+		--wui-selectpicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
+		--wui-selectpicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+		--wui-selectpicker-opener-openicon-src: none;
+		--wui-selectpicker-opener-closeicon-src: none;
+	
 	--wui-selectpicker-input-textcolor-out: var(--wui-form-input-textcolor-out);
 	--wui-selectpicker-input-textcolor-over: var(--wui-form-input-textcolor-over);
 	--wui-selectpicker-input-textcolor-disabled: var(--wui-form-input-textcolor-disabled);
@@ -388,11 +393,14 @@
 	--wui-selectpicker-box-option-bordercolor-over: var(--wuiplugins-theme-bordercolor-low);
 	--wui-selectpicker-box-option-bgcolor-out: transparent;
 	--wui-selectpicker-box-option-bgcolor-over: var(--wuiplugins-theme-bgcolor-over);
-	--wui-selectpicker-box-option-checkicon-src: none;
-	--wui-selectpicker-box-option-checkcolor-out: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-selectpicker-box-option-checkcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-selectpicker-box-option-checkcolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-selectpicker-box-option-checkcolor-disabled: rgb(from var(--wuiplugins-theme-utilitycolor-disabled) r g b / 40%);
+
+		--wui-selectpicker-box-option-iconsize: 24px;
+		--wui-selectpicker-box-option-iconcolor-out: var(--wuiplugins-theme-utilitycolor-hightlight);
+		--wui-selectpicker-box-option-iconcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
+		--wui-selectpicker-box-option-iconcolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
+		--wui-selectpicker-box-option-iconcolor-disabled: rgb(from var(--wuiplugins-theme-utilitycolor-disabled) r g b / 40%);
+		--wui-selectpicker-box-option-checkicon-src: none;
+
 	--wui-selectpicker-box-option-textcolor-empty: rgb(from var(--wuiplugins-theme-textcolor-active) r g b / 60%);
 	--wui-selectpicker-box-option-textcolor-out: var(--wuiplugins-theme-textcolor-active);
 	--wui-selectpicker-box-option-textcolor-over: var(--wuiplugins-theme-textcolor-active);
@@ -407,32 +415,31 @@
 
 	/* wui-datepicker */
 
-	--wui-datepicker-openicon-src: none;
-	--wui-datepicker-openicon-size: var(--wui-form-select-openicon-size);
-	--wui-datepicker-opencolor-out: var(--wui-form-select-opencolor-out);
-	--wui-datepicker-opencolor-over: var(--wui-form-select-opencolor-over);
-	--wui-datepicker-opencolor-focus: var(--wui-form-select-opencolor-focus);
-	--wui-datepicker-opencolor-disabled: var(--wui-form-select-opencolor-disabled);
+		--wui-datepicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
+		--wui-datepicker-opener-iconcolor-out: var(--wui-form-select-opencolor-out);
+		--wui-datepicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
+		--wui-datepicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+		--wui-datepicker-opener-openicon-src: none;
+		--wui-datepicker-opener-closeicon-src: none;
+
 	--wui-datepicker-box-shadowcolor: var(--wuiplugins-theme-shadowcolor-low);
 	--wui-datepicker-box-borderradius: var(--wuiplugins-theme-borderradius-half);
 	--wui-datepicker-box-bordercolor: var(--wuiplugins-theme-bordercolor-low);
 	--wui-datepicker-box-bgcolor: rgb(from var(--wuiplugins-theme-bgcolor-out) r g b / 100%);
-	--wui-datepicker-box-upicon-src: none;
-	--wui-datepicker-box-upcolor-out: var(--wuiplugins-theme-graycolor-min);
-	--wui-datepicker-box-upcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-datepicker-box-upcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	--wui-datepicker-box-downicon-src: none;
-	--wui-datepicker-box-downcolor-out: var(--wuiplugins-theme-graycolor-min);
-	--wui-datepicker-box-downcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-datepicker-box-downcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	--wui-datepicker-box-previcon-src: none;
-	--wui-datepicker-box-prevcolor-out: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-datepicker-box-prevcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-datepicker-box-prevcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	--wui-datepicker-box-nexticon-src: none;
-	--wui-datepicker-box-nextcolor-out: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-datepicker-box-nextcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
-	--wui-datepicker-box-nextcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
+
+		--wui-datepicker-box-period-iconsize: 20px;
+		--wui-datepicker-box-period-iconcolor-out: var(--wuiplugins-theme-graycolor-min);
+		--wui-datepicker-box-period-iconcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
+		--wui-datepicker-box-period-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
+		--wui-datepicker-box-period-upicon-src: none;
+		--wui-datepicker-box-period-downicon-src: none;
+		--wui-datepicker-box-paging-iconsize: 26px;
+		--wui-datepicker-box-paging-iconcolor-out: var(--wuiplugins-theme-utilitycolor-hightlight);
+		--wui-datepicker-box-paging-iconcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
+		--wui-datepicker-box-paging-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
+		--wui-datepicker-box-paging-previcon-src: none;
+		--wui-datepicker-box-paging-nexticon-src: none;
+
 	--wui-datepicker-box-month-titlecolor: var(--wuiplugins-theme-graycolor-half);
 	--wui-datepicker-box-month-bgcolor-today: var(--wuiplugins-theme-bordercolor-low);
 	--wui-datepicker-box-month-bgcolor-over: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 20%);
@@ -452,12 +459,13 @@
 
 	/* wui-timepicker */
 
-	--wui-timepicker-openicon-src: none;
-	--wui-timepicker-openicon-size: var(--wui-form-select-openicon-size);
-	--wui-timepicker-opencolor-out: var(--wui-form-select-opencolor-out);
-	--wui-timepicker-opencolor-over: var(--wui-form-select-opencolor-over);
-	--wui-timepicker-opencolor-focus: var(--wui-form-select-opencolor-focus);
-	--wui-timepicker-opencolor-disabled: var(--wui-form-select-opencolor-disabled);
+		--wui-timepicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
+		--wui-timepicker-opener-iconcolor-out: var(--wui-form-select-opencolor-out);
+		--wui-timepicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
+		--wui-timepicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+		--wui-timepicker-opener-openicon-src: none;
+		--wui-timepicker-opener-closeicon-src: none;
+
 	--wui-timepicker-box-shadowcolor: var(--wuiplugins-theme-shadowcolor-low);
 	--wui-timepicker-box-borderradius: var(--wuiplugins-theme-borderradius-half);
 	--wui-timepicker-box-bordercolor: var(--wuiplugins-theme-bordercolor-low);
@@ -484,12 +492,14 @@
 	--wui-colorpicker-button-bgcolor-disabled: transparent;
 	--wui-colorpicker-viewicon-borderwidth: 1px;
 	--wui-colorpicker-viewicon-bordercolor: rgb(from var(--wuiplugins-theme-utilitycolor-hightlight) r g b / 20%);
-	--wui-colorpicker-openicon-src: none;
-	--wui-colorpicker-openicon-size: var(--wui-form-select-openicon-size);
-	--wui-colorpicker-opencolor-out: var(--wui-form-select-opencolor-out);
-	--wui-colorpicker-opencolor-over: var(--wui-form-select-opencolor-over);
-	--wui-colorpicker-opencolor-focus: var(--wui-form-select-opencolor-focus);
-	--wui-colorpicker-opencolor-disabled: var(--wui-form-select-opencolor-disabled);
+
+		--wui-colorpicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
+		--wui-colorpicker-opener-iconcolor-out: var(--wui-form-select-opencolor-out);
+		--wui-colorpicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
+		--wui-colorpicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+		--wui-colorpicker-opener-openicon-src: none;
+		--wui-colorpicker-opener-closeicon-src: none;
+
 	--wui-colorpicker-emptyicon-src: none;
 	--wui-colorpicker-emptycolor-out: var(--wuiplugins-theme-bgcolor-over);
 	--wui-colorpicker-box-shadowcolor: var(--wuiplugins-theme-shadowcolor-low);
