@@ -81,10 +81,6 @@
 
 .wuiplugins-themes {
 
-	/* wui-loader */
-
-	--wui-loader-color: var(--wuiplugins-theme-bgcolor-icon);
-
 	/* wui-scrolly */
 
 	--wui-scrolly-paging-bgcolor: var(--wuiplugins-theme-bgcolor-over);
@@ -95,6 +91,10 @@
 	--wui-icon-smallsize: 14px;
 	--wui-icon-bgcolor-out: rgb(from var(--wuiplugins-theme-bgcolor-icon) r g b / 70%);
 	--wui-icon-bgcolor-over: var(--wuiplugins-theme-bgcolor-icon);
+
+	/* wui-loader */
+
+	--wui-loader-color: var(--wuiplugins-theme-bgcolor-icon);
 
 	/* wui-tooltip */
 
