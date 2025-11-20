@@ -368,8 +368,8 @@
 
 	--wui-selectpicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
 	--wui-selectpicker-opener-iconcolor-out: var(--wuiplugins-theme-graycolor-min);
-	--wui-selectpicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
-	--wui-selectpicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+	--wui-selectpicker-opener-iconcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
+	--wui-selectpicker-opener-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
 	--wui-selectpicker-opener-openicon-src: none;
 	--wui-selectpicker-opener-closeicon-src: none;
 	--wui-selectpicker-input-textcolor-out: var(--wui-form-input-textcolor-out);
@@ -405,9 +405,9 @@
 	/* wui-datepicker */
 
 	--wui-datepicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
-	--wui-datepicker-opener-iconcolor-out: var(--wui-form-select-opencolor-out);
-	--wui-datepicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
-	--wui-datepicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+	--wui-datepicker-opener-iconcolor-out: var(--wuiplugins-theme-graycolor-min);
+	--wui-datepicker-opener-iconcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
+	--wui-datepicker-opener-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
 	--wui-datepicker-opener-openicon-src: none;
 	--wui-datepicker-opener-closeicon-src: none;
 	--wui-datepicker-box-shadowcolor: var(--wuiplugins-theme-shadowcolor-low);
@@ -446,9 +446,9 @@
 	/* wui-timepicker */
 
 	--wui-timepicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
-	--wui-timepicker-opener-iconcolor-out: var(--wui-form-select-opencolor-out);
-	--wui-timepicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
-	--wui-timepicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+	--wui-timepicker-opener-iconcolor-out: var(--wuiplugins-theme-graycolor-min);
+	--wui-timepicker-opener-iconcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
+	--wui-timepicker-opener-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
 	--wui-timepicker-opener-openicon-src: none;
 	--wui-timepicker-opener-closeicon-src: none;
 	--wui-timepicker-box-shadowcolor: var(--wuiplugins-theme-shadowcolor-low);
@@ -476,9 +476,9 @@
 	--wui-colorpicker-button-bgcolor-over: transparent;
 	--wui-colorpicker-button-bgcolor-disabled: transparent;
 	--wui-colorpicker-opener-iconsize: var(--wuiplugins-theme-input-opener-iconsize);
-	--wui-colorpicker-opener-iconcolor-out: var(--wui-form-select-opencolor-out);
-	--wui-colorpicker-opener-iconcolor-over: var(--wui-form-select-opencolor-over);
-	--wui-colorpicker-opener-iconcolor-disabled: var(--wui-form-select-opencolor-disabled);
+	--wui-colorpicker-opener-iconcolor-out: var(--wuiplugins-theme-graycolor-min);
+	--wui-colorpicker-opener-iconcolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
+	--wui-colorpicker-opener-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
 	--wui-colorpicker-opener-openicon-src: none;
 	--wui-colorpicker-opener-closeicon-src: none;
 	--wui-colorpicker-viewcolor-borderwidth: 1px;
