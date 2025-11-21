@@ -206,6 +206,8 @@
 	--wui-menubar-barbutton-textcolor-over: var(--wuiplugins-theme-textcolor-focus);
 	--wui-menubar-barbutton-textcolor-selected: var(--wuiplugins-theme-bgcolor-over);
 	--wui-menubar-barbutton-textcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
+	--wui-menubar-submenu-opener-iconsize: 16px;
+	--wui-menubar-submenu-opener-openicon-src: none;
 	/*--wui-menubar-submenu-bordercolor
 	--wui-menubar-submenu-bgcolor
 	--wui-menubar-submenubutton-bgcolor-out: transparent;
