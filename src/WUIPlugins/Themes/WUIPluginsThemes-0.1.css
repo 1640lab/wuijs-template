@@ -186,25 +186,27 @@
 	--wui-menubar-bar-bordercolor: var(--wuiplugins-theme-bordercolor-low);
 	--wui-menubar-bar-bgcolor-top: var(--wuiplugins-theme-bordercolor-low);
 	--wui-menubar-bar-bgcolor-bottom: var(--wuiplugins-theme-bordercolor-low);
-	--wui-menubar-barexpander-iconsize: 24px;
-	--wui-menubar-barexpander-bgcolor-out: var(--wuiplugins-theme-graycolor-low);
-	--wui-menubar-barexpander-bgcolor-over: var(--wuiplugins-theme-graycolor-min);
+	--wui-menubar-barexpander-bgcolor-out: transparent;
+	--wui-menubar-barexpander-bgcolor-over: rgb(from var(--wuiplugins-theme-bordercolor-high) r g b / 40%);
+	--wui-menubar-barexpander-iconsize: 16px;
+	--wui-menubar-barexpander-iconcolor-out: var(--wuiplugins-theme-graycolor-low);
+	--wui-menubar-barexpander-iconcolor-over: var(--wuiplugins-theme-graycolor-min);
 	--wui-menubar-barexpander-expandicon-src: none;
 	--wui-menubar-barexpander-contracticon-src: none;
 	--wui-menubar-barbutton-bgcolor-out: transparent;
-	--wui-menubar-barbutton-bgcolor-over: transparent;
+	--wui-menubar-barbutton-bgcolor-over: rgb(from var(--wuiplugins-theme-bordercolor-high) r g b / 40%);
 	--wui-menubar-barbutton-bgcolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
 	--wui-menubar-barbutton-bgcolor-disabled: transparent;
 	--wui-menubar-barbutton-iconsize: 24px;
 	--wui-menubar-barbutton-iconcolor-out: rgb(from var(--wuiplugins-theme-bgcolor-icon) r g b / 70%);
 	--wui-menubar-barbutton-iconcolor-over: var(--wuiplugins-theme-bgcolor-icon);
-	--wui-menubar-barbutton-iconcolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
+	--wui-menubar-barbutton-iconcolor-selected: var(--wuiplugins-theme-bgcolor-over);
 	--wui-menubar-barbutton-iconcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	/*--wui-menubar-barbutton-textcolor-out
-	--wui-menubar-barbutton-textcolor-over
-	--wui-menubar-barbutton-textcolor-selected
+	--wui-menubar-barbutton-textcolor-out: var(--wuiplugins-theme-textcolor-active);
+	--wui-menubar-barbutton-textcolor-over: var(--wuiplugins-theme-textcolor-focus);
+	--wui-menubar-barbutton-textcolor-selected: var(--wuiplugins-theme-bgcolor-over);
 	--wui-menubar-barbutton-textcolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
-	--wui-menubar-submenu-bordercolor
+	/*--wui-menubar-submenu-bordercolor
 	--wui-menubar-submenu-bgcolor
 	--wui-menubar-submenubutton-bgcolor-out: transparent;
 	--wui-menubar-submenubutton-bgcolor-over
