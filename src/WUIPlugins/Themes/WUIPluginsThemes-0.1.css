@@ -544,7 +544,7 @@
 
 	--wui-button-default-minwidth: 200px;
 	--wui-button-default-height: 34px;
-	--wui-button-default-bordercolor-out: var(--wuiplugins-theme-bordercolor-high);
+	--wui-button-default-bordercolor-out: var(--wuiplugins-theme-bordercolor-max);
 	--wui-button-default-bordercolor-over: var(--wuiplugins-theme-utilitycolor-hightlight);
 	--wui-button-default-bordercolor-selected: var(--wuiplugins-theme-utilitycolor-hightlight);
 	--wui-button-default-bordercolor-disabled: var(--wuiplugins-theme-utilitycolor-disabled);
